@@ -6,3 +6,13 @@ service discovery and load balancing for exposing applications to the outside wo
 storage orchestration
 self healing for automatically replacing and rescheduling failed containers
 
+etcd- distributed key-value store: to maintain the state of k8s cluster and configuration
+controller manager -- managing the various controllers like replication and self healing
+API-Server -- exposing k8s API and interacting with etcd store
+Scheduler-- create or scale app's the scheduler determines what  nodes can run workloads and starts them
+kubelet -- communicating with APIS server and managing lifecycles of pods
+container runtime -- pulling and starting containers on node
+kube-proxy -- implementing service networking model
+Node Pool -- set of virtual machine with same configurations
+system node pool -- coreDNS, metric server, tunnel front and oms agent
+user node pool -- Deploy Applications
